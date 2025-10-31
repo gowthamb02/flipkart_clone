@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart clone</title>
+    <link rel="icon" href="img/logo-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/cb6000844d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!----------- navbar ---------->
+    <header>
+        <div class="navbar">
+            <div class="nav__left">
+                <div class="logo">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                        width="160px" height="40px" alt="flipkart_log">
+                </div>
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #717478; width: 24px; height: 24px;"></i>
+                    <input type="text" placeholder="Search for Products, Brands and More">
+                </div>
+            </div>
+
+            <div class="nav__right">
+                <div class="loginbtn">
+                    <div class="login__profileicon"><img src="img/profile.svg" alt="profileicon"></div>
+                    <div class="loginbtn__name"><button>Login</button></div>
+                    <div class="drag__downicon"><img src="img/dragdown.svg" alt="down icon"></div>
+                </div>
+
+                <div class="cartbtn">
+                    <div class="cart__icon"><img src="img/header_cart.svg" width="24px" height="24px" alt="carticon">
+                    </div>
+                    <div class="cart__name">Cart</div>
+                </div>
+
+                <div class="sellerbtn">
+                    <div class="sellericon">
+                        <img src="img/Storeicon.svg" width="24px" height="24px" alt="storeicon">
+                    </div>
+                    <div class="sellerbtn__name">Become a Seller</div>
+                </div>
+
+                <div class="dots__icon">
+                    <button><img src="img/3verticalDots.svg" width="24px" height="24px" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- category section -->
+
+        <div class="category__section">
+            <div class="category__item">
+                <div class="category__icon"><img src="img/scooter2.webp" alt="scooter"></div>
+                <div class="category__name">Minutes</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/mobile.png" alt="mobiles"></div>
+                <div class="category__name">Mobiles & Tablets</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/homeappliance.webp" alt="homeappliance"></div>
+                <div class="category__name">TVs & Appliances</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/electronics.webp " alt="Electronics"></div>
+                <div class="category__name">Electronics</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/fashion.webp" alt="fashion"></div>
+                <div class="category__name">Fashion</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/home.webp" alt="homeandkitchen"></div>
+                <div class="category__name">Home & Kitchen</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/toys.webp" alt="toys"></div>
+                <div class="category__name">Beauty & toys</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/furniture.png" alt="furniture"></div>
+                <div class="category__name">Furniture</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/ticket.webp" alt="ticket"></div>
+                <div class="category__name">Flight Bookings</div>
+            </div>
+
+            <div class="category__item">
+                <div class="category__icon"><img src="img/grocery.webp" alt="grocery"></div>
+                <div class="category__name">Grocery</div>
+            </div>
+        </div>
+
+        <!-- banner scrollbar -->
+
+        <div class="banner__scrollbar">
+            <div class="scrollbtn">
+                <div class="leftbtn"><button>&lt</button></div>
+                <div class="rightbtn"><button>&gt</button></div>
+            </div>
+            <div class="banner__img-container">
+                <div class="banner__img1"><img src="img/scrollbanner1.webp" alt="bannerimg"></div>
+                <div class="banner__img1"><img src="img/scrollbanner2.webp" alt="bannerimg"></div>
+                <div class="banner__img1"><img src="img/scrollbanner3.webp" alt="bannerimg"></div>
+                <div class="banner__img1"><img src="img/scrollbanner4.webp" alt="bannerimg"></div>
+                <div class="banner__img1"><img src="img/scrollbanner5.png" alt="bannerimg"></div>
+                <div class="banner__img1"><img src="img/scrollbanner6.webp" alt="bannerimg"></div>
+                <div class="banner__img1"><img src="img/scrollbanner7.webp" alt="bannerimg"></div>
+
+                <!-- duplicate of first image for smooth looping -->
+                <div class="banner__img1"><img src="img/scrollbanner1.webp" alt="duplicate"></div>
+            </div>
+        </div>
+
+        <!-- best deals on phones -->
+
+        <div class="bestdealsection__grid">
+            <div class="bestdealsection">
+                <div class="bd__title">Best deals on smartphones</div>
+
+                <div class="bestdeal__phones">
+                    <div class="bdphone__scroll">
+
+                        <div class="bdphone__list">
+                            <div class="phone__img"><img src="img/phone1.webp" alt="phone1"></div>
+                            <div class="phone__name">OPPO K13x 5G</div>
+                            <div class="phone__price">From ₹9,499*</div>
+                        </div>
+
+                        <div class="bdphone__list">
+                            <div class="phone__img"><img src="img/phone2.webp" alt="phone2"></div>
+                            <div class="phone__name">Moto Edge 60 Pro 5G</div>
+                            <div class="phone__price">From ₹24,999*</div>
+                        </div>
+
+                        <div class="bdphone__list">
+                            <div class="phone__img"><img src="img/phone3.webp" alt="phone3"></div>
+                            <div class="phone__name">Realme P4 5G</div>
+                            <div class="phone__price">From ₹14,999*</div>
+                        </div>
+
+                        <div class="bdphone__list">
+                            <div class="phone__img"><img src="img/phone4.webp" alt="phone4"></div>
+                            <div class="phone__name">OPPO K13 5G</div>
+                            <div class="phone__price">From ₹14,999*</div>
+                        </div>
+
+                        <div class="bdphone__list">
+                            <div class="phone__img"><img src="img/phone5.webp" alt="phone5"></div>
+                            <div class="phone__name">Moto G96 5G</div>
+                            <div class="phone__price">Just ₹14,999*</div>
+                        </div>
+
+                        <div class="bdphone__list">
+                            <div class="phone__img"><img src="img/phone6.webp" alt="phone6"></div>
+                            <div class="phone__name">Realme P3x 5G</div>
+                            <div class="phone__price">From ₹10,999*</div>
+                        </div>
+
+                        <div class="bdphone__list">
+                            <div class="phone__img"><img src="img/phone7.webp" alt="phone7"></div>
+                            <div class="phone__name" id="Samsung">Samsung Galaxy A35 5G</div>
+                            <div class="phone__price">From ₹17,999*</div>
+                        </div>
+
+                        <div class="bdphone__list">
+                            <div class="phone__img"><img src="img/phone8.webp" alt="phone8"></div>
+                            <div class="phone__name">realme P4 Pro 5G</div>
+                            <div class="phone__price">From ₹21,499*</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bdphone__add">
+                <img src="img/bdphones-ad.webp" alt="ad">
+            </div>
+        </div>
+
+        <!-- poster images -->
+
+        <div class="poster">
+            <div class="posterimg"><img src="img/poster1.webp" alt="poster"></div>
+            <div class="posterimg"><img src="img/poster2.webp" alt="poster"></div>
+            <div class="posterimg"><img src="img/poster3.webp" alt="poster"></div>
+            <div class="posterimg"><img src="img/poster4.webp" alt="poster"></div>
+            <div class="posterimg"><img src="img/poster5.webp" alt="poster"></div>
+            <div class="posterimg"><img src="img/poster6.webp" alt="poster"></div>
+        </div>
+
+        <!-- top deals -->
+        <div class="topdeals">
+            <div class="td__title">Top deals on appliances</div>
+
+            <div class="topdeals__scroll">
+                <div class="td__list">
+                    <div class="td__img"><img src="img/topdeals1.webp" alt="topdeals"></div>
+                    <div class="td__name">Premium TVs</div>
+                    <div class="td__price">From ₹15,499*</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/topdeals2.webp" alt="topdeals"></div>
+                    <div class="td__name">Best-selling Refrigerators</div>
+                    <div class="td__price">From ₹9,990</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/topdeals3.webp" alt="topdeals"></div>
+                    <div class="td__name">Trending deals</div>
+                    <div class="td__price">Shop now!</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/topdeals4.webp" alt="topdeals"></div>
+                    <div class="td__name">Kitchen Essentials</div>
+                    <div class="td__price">From ₹1249</div>
+                </div>
+                <div class="td__list">
+                    <div class="td__img"><img src="img/topdeals5.webp" alt="topdeals"></div>
+                    <div class="td__name">Home Essentials</div>
+                    <div class="td__price">Shop Now!</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/topdeals6.avif" alt="topdeals"></div>
+                    <div class="td__name">Fans & Geysers</div>
+                    <div class="td__price">From ₹799</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/topdeals7.jpeg" alt="topdeals"></div>
+                    <div class="td__name">Microwave Ovens</div>
+                    <div class="td__price">From ₹4,990</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/topdeals8.webp" height="152px" alt="topdeals"></div>
+                    <div class="td__name">Lowest Price Ever</div>
+                    <div class="td__price">From ₹19,990*</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- photograpghy card section  -->
+         
+        <div class="category__grid">
+            <div class="card__layout">
+                <div class="card__head">
+                    <div class="card__name">Photography Gear</div>
+                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                </div>
+
+                <div class="card__grid">
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/photography1.jpeg" alt="Camera"></div>
+                        <div class="carditem__name">Cameras</div>
+                        <div class="carditem__offer">Special offer</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/photography2.jpeg" alt="Selfie Stick"></div>
+                        <div class="carditem__name">Selfie Sticks</div>
+                        <div class="carditem__offer">Special offer</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/photography3.jpeg" alt="Drone"></div>
+                        <div class="carditem__name">Drones</div>
+                        <div class="carditem__offer">Special offer</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/photography4.jpeg" alt="DSLR"></div>
+                        <div class="carditem__name">DSLR & Mirrorless</div>
+                        <div class="carditem__offer">Big Savings</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile card -->
+
+            <div class="card__layout">
+                <div class="card__head">
+                    <div class="card__name">Mobiles To Check Out</div>
+                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                </div>
+
+                <div class="card__grid">
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/mobilecard1.jpeg" alt="mobile"></div>
+                        <div class="carditem__name">OPPO</div>
+                        <div class="carditem__offer">Best Selling Products</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/mobilecard2.jpeg" alt="mobile"></div>
+                        <div class="carditem__name">Top Collection</div>
+                        <div class="carditem__offer">Best Selling Products</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/mobilecard3.jpeg" alt="mobile"></div>
+                        <div class="carditem__name">Best Discounts</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/mobilecard4.jpeg" alt="mobile"></div>
+                        <div class="carditem__name">Top Quality</div>
+                        <div class="carditem__offer">Plus - Products</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- add card 1 -->
+            <div class="ad__card">
+                <img src="img/category add1.jpg" alt="Add1">
+            </div>
+
+            <!-- travel essentials -->
+
+            <div class="card__layout">
+                <div class="card__head">
+                    <div class="card__name">Travel Essentials For You</div>
+                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                </div>
+
+                <div class="card__grid">
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/travel1.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Men's Cargos</div>
+                        <div class="carditem__offer">Special offer</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/travel2.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Men's Caps</div>
+                        <div class="carditem__offer">Specials</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/travel3.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Men's Shorts</div>
+                        <div class="carditem__offer">Special offer</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/travel4.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Men's Track Pantsy</div>
+                        <div class="carditem__offer">Best Picks</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- furniture -->
+
+            <div class="card__layout">
+                <div class="card__head">
+                    <div class="card__name">Best Deals on Designer Furniture</div>
+                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                </div>
+
+                <div class="card__grid">
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/furniturecard1.png" alt="travel"></div>
+                        <div class="carditem__name">Shoe Rack</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/furniturecard2.png" alt="travel"></div>
+                        <div class="carditem__name">Home Temple</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/furniturecard3.png" alt="travel"></div>
+                        <div class="carditem__name">Collapsible Wardrobes</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/furniturecard4.png" alt="travel"></div>
+                        <div class="carditem__name">Beds</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fashion -->
+
+            <div class="card__layout">
+                <div class="card__head">
+                    <div class="card__name">Fashion's Top Deals</div>
+                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                </div>
+
+                <div class="card__grid">
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/fashioncard1.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Men’s Sports Shoes</div>
+                        <div class="carditem__offer">Min. 70% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/fashioncard2.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Laptop Bags</div>
+                        <div class="carditem__offer">Min. 70% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/fashioncard3.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Men’s Slippers & Flip Flops</div>
+                        <div class="carditem__offer">Min. 70% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/fashioncard4.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Women's Flats</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shop your favorite -->
+
+            <div class="card__layout">
+                <div class="card__head">
+                    <div class="card__name">Shop Your Favorites</div>
+                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                </div>
+
+                <div class="card__grid">
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/shopfvt1.jpeg" alt="travel"></div>
+                        <div class="carditem__name">True Wireless</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/shopfvt2.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Neckband</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/shopfvt3.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Trimmers</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/shopfvt4.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Smart Watches</div>
+                        <div class="carditem__offer">Min. 40% Off</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- home deccor -->
+
+            <div class="card__layout">
+                <div class="card__head">
+                    <div class="card__name">Home Decor & Furnishing</div>
+                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                </div>
+
+                <div class="card__grid">
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/decor1.jpeg" alt="decor"></div>
+                        <div class="carditem__name">Wall Clock</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/decor2.png" alt="travel"></div>
+                        <div class="carditem__name">Floor Coveringd</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/decor3.png" alt="travel"></div>
+                        <div class="carditem__name">Shoe Rack</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/decor4.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Plant Containers</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- add card 2 -->
+            <div class="ad__card">
+                <img src="img/category add2.jpg" alt="Add2">
+            </div>
+        </div>
+
+        <!-- furniture top deal list -->
+
+        <div class="topdeals">
+            <div class="td__title">Furniture Deals</div>
+
+            <div class="topdeals__scroll">
+                <div class="td__list">
+                    <div class="td__img"><img src="img/furniture1.png" alt="topdeals"></div>
+                    <div class="td__name">Mattresses</div>
+                    <div class="td__price">From ₹2,990</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/furniture2.png" alt="topdeals"></div>
+                    <div class="td__name">Sofa & Sectional</div>
+                    <div class="td__price">From ₹7,999</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/furniture3.png" alt="topdeals"></div>
+                    <div class="td__name">Office Study Chairs</div>
+                    <div class="td__price">From ₹1,890</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/furniture4.png" alt="topdeals"></div>
+                    <div class="td__name">Beds</div>
+                    <div class="td__price">From ₹1790</div>
+                </div>
+                <div class="td__list">
+                    <div class="td__img"><img src="img/furniture5.jpeg" alt="topdeals"></div>
+                    <div class="td__name">TV Units</div>
+                    <div class="td__price">From ₹1290</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/furniture6.jpeg" alt="topdeals"></div>
+                    <div class="td__name">Sofa Beds</div>
+                    <div class="td__price">From ₹6,099</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/furniture7.jpeg" alt="topdeals"></div>
+                    <div class="td__name">Sofa Set</div>
+                    <div class="td__price">From ₹21,999</div>
+                </div>
+
+                <div class="td__list">
+                    <div class="td__img"><img src="img/furniture8.jpeg" height="152px" alt="topdeals"></div>
+                    <div class="td__name">Sofa Beds</div>
+                    <div class="td__price">From ₹6,099*</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- category and add  -->
+
+        <div class="category__grid2">
+            <div class="card__layout">
+                <div class="card__head">
+                    <div class="card__name">Hair & Skincare Essentials</div>
+                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                </div>
+
+                <div class="card__grid">
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/skincare1.jpeg" alt="decor"></div>
+                        <div class="carditem__name">Moisturizer</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/skincare2.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Face Wash</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/skincare3.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Roll On</div>
+                        <div class="carditem__offer">Min. 50% Off</div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="carditem__img"><img src="img/skincare4.jpeg" alt="travel"></div>
+                        <div class="carditem__name">Blush</div>
+                        <div class="carditem__offer">Special Offer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad__card2">
+                <img src="img/category add3.jpg" alt="add">
+            </div>
+        </div>
+
+
+        <!-- top deals on appliance -->
+
+        <div class="topdeals2">
+            <div class="td__title">
+                Top deals on appliances
+            </div>
+            <div class="div__listmain">
+                <div class="td__listbar">
+                    <div class="td__list">
+                        <div class="td__img"><img src="img/appliance1.png" alt="topdeals"></div>
+                        <div class="td__name">Kitchen Essentials</div>
+                        <div class="td__price">From ₹1249</div>
+                    </div>
+
+                    <div class="td__list">
+                        <div class="td__img"><img src="img/appliance2.jpeg" alt="topdeals"></div>
+                        <div class="td__name">Home Essentials</div>
+                        <div class="td__price">Shop Now!</div>
+                    </div>
+
+                    <div class="td__list">
+                        <div class="td__img"><img src="img/appliance3.png" alt="topdeals"></div>
+                        <div class="td__name">Fans & Geysers</div>
+                        <div class="td__price">From ₹799</div>
+                    </div>
+
+                    <div class="td__list">
+                        <div class="td__img"><img src="img/appliance4.png" alt="topdeals"></div>
+                        <div class="td__name">Bata, Khadim's ...</div>
+                        <div class="td__price">Under ₹499</div>
+                    </div>
+                    <div class="td__list">
+                        <div class="td__img"><img src="img/appliance5.jpeg" alt="topdeals"></div>
+                        <div class="td__name">Puma, Adidas ...</div>
+                        <div class="td__price">Min. 40% Off</div>
+                    </div>
+
+                    <div class="td__list">
+                        <div class="td__img"><img src="img/appliance6.jpeg" alt="topdeals"></div>
+                        <div class="td__name">Allen Solly & Van Heusen</div>
+                        <div class="td__price">Min. 40% Off</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer__section1">
+            <div class="section1">
+                <div class="head">ABOUT</div>
+                <div class="list">Contact Us</div>
+                <div class="list">Careers</div>
+                <div class="list">Flipkart Stories</div>
+                <div class="list">Press</div>
+                <div class="list">Corporate Information</div>
+            </div>
+
+            <div class="section1">
+                <div class="head">GROUP COMPANIES</div>
+                <div class="list">Myntra</div>
+                <div class="list">Cleartrip</div>
+                <div class="list">Shopsy</div>
+            </div>
+
+            <div class="section1">
+                <div class="head">HELP</div>
+                <div class="list">Payments</div>
+                <div class="list">Cancellation & Returns</div>
+                <div class="list">FAQ</div>
+            </div>
+
+
+            <div class="section1">
+                <div class="head">CONSUMER POLICY</div>
+                <div class="list">Cancellation & Returns</div>
+                <div class="list">Terms Of Use</div>
+                <div class="list">Security</div>
+                <div class="list">Privacy</div>
+                <div class="list">Sitemap</div>
+                <div class="list">Grievance Redressal</div>
+                <div class="list">EPR Compliance</div>
+
+            </div>
+
+            <div class="section1" id="line">
+                <div class="head">Mail Us:</div>
+                <div class="head__para">
+                    <p class="p">Flipkart Internet Private Limited, </p>
+                    <p class="p"> Buildings Alyssa, Begonia &amp; </p>
+                    <p class="p"> Clove Embassy Tech Village, </p>
+                    <p class="p"> Outer Ring Road, Devarabeesanahalli Village, </p>
+                    <p class="p"> Bengaluru, 560103, </p>
+                    <p class="p"> Karnataka, India</p>
+                </div>
+
+                <div>
+                    <div class="head"> Social:</div>
+                    <div class="logoicon">
+                        <div class="logo__img"><img src="img/footerlogo1.svg" alt="icon"></div>
+                        <div class="logo__img"><img src="img/footerlogo2.svg" alt="icon"></div>
+                        <div class="logo__img"><img src="img/footerlogo3.svg" alt="icon"></div>
+                        <div class="logo__img"><img src="img/footerlogo4.svg" alt="icon" width="20px" height="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section1">
+                <div class="head">Registered Office Address:</div>
+                <div class="head__para">
+                    <p class="p"> Buildings Alyssa, Begonia &amp; </p>
+                    <p class="p">Flipkart Internet Private Limited, </p>
+                    <p class="p"> Clove Embassy Tech Village, </p>
+                    <p class="p"> Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p class="p"> Bengaluru, 560103, </p>
+                    <p class="p"> Karnataka, India </p>
+                    <p class="p"> CIN : U51109KA2012PTC066107 </p>
+                    <p class="p">Telephone: <span style="color: rgb(40, 120, 247); cursor: pointer;">044-45614700
+                        </span>
+                        / <span style="color: rgb(40, 120, 247); cursor: pointer;">044-67415800</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__section2">
+
+            <div class="section2__list">
+                <div class="section2__icon"> <img src="/img/foootericon1.svg" width="13px" height="13px"
+                        alt="seller icon"></div>
+                <div class="section2__name">Become a Seller</div>
+            </div>
+
+            <div class="section2__list">
+                <div class="section2__icon"> <img src="/img/foootericon2.svg" alt="seller icon"></div>
+                <div class="section2__name">Become a Seller</div>
+            </div>
+
+            <div class="section2__list">
+                <div class="section2__icon"> <img src="/img/foootericon3.svg" alt="seller icon"></div>
+                <div class="section2__name">Advertise</div>
+            </div>
+
+            <div class="section2__list">
+                <div class="section2__icon"> <img src="/img/foootericon4.svg" alt="seller icon"></div>
+                <div class="section2__name">Gift Cards</div>
+            </div>
+
+            <div class="section2__list">
+                <div class="section2__name" style="cursor:default;">© 2007-2025 <span>Flipkart.com</span></div>
+            </div>
+
+            <div class="section2__list">
+                <div class="section2__payment--img"><img src="img/payment-method-logo.svg" alt="payment-method-logo">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

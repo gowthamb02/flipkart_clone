@@ -1,0 +1,1003 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: rgb(241, 242, 244);
+    scroll-behavior: smooth;
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 16px;
+    position: relative;
+    top: 64px;
+    /* row-gap: 16px; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 12px 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.nav__left {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav__right {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 36px;
+    cursor: pointer;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    /* max-width: 500px; */
+    min-width: 400px;
+    /* width: 700px; */
+    width: 100%;
+    height: 40px;
+    background-color: rgb(240, 245, 255);
+    border-radius: 5px;
+    padding: 8px 8px 8px 12px;
+    gap: 8px;
+}
+
+.searchbar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 17px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.searchbar i {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 24px;
+    height: 24px;
+}
+
+.loginbtn {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    /* padding: 8px; */
+    padding: 0 20px;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    position: relative;
+    /* Essential for positioning the ::before element */
+    overflow: hidden;
+
+}
+
+.login__profileicon {
+    display: flex;
+    align-items: center;
+    /* margin-right: 8px; */
+}
+
+.login__icon img {
+
+    width: 24px;
+    height: 24px;
+}
+
+.loginbtn__name {
+    display: flex;
+    align-items: center;
+}
+
+.loginbtn__name button {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* display: flex;         
+    align-items: center;  */
+}
+
+.drag__downicon img {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.drag__downicon {
+    position: relative;
+    top: 1px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 8px; */
+    cursor: pointer;
+
+}
+
+.loginbtn:hover {
+    /* background-color: rgb(42, 84, 228); */
+    /* transition: background-color 0.3s ease; */
+    color: white;
+}
+
+.loginbtn:hover .loginbtn__name button {
+
+    background-color: transparent;
+    color: white;
+}
+
+.loginbtn:hover .login__profileicon img,
+.loginbtn:hover .drag__downicon img {
+    filter: invert(1);
+}
+
+.loginbtn:hover .drag__downicon img {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.loginbtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    /* Aligns with the start of your content (where padding ends) */
+    right: 15px;
+    /* Aligns with the end of your content (where padding starts) */
+    bottom: 0;
+    background-color: transparent;
+    border-radius: 6px;
+    /* A slightly smaller radius looks better inside the padding */
+    transition: background-color 0.3s ease;
+    z-index: -1;
+    /* Puts the background behind the content */
+}
+
+.loginbtn:hover::before {
+    background-color: rgb(42, 84, 228);
+}
+
+.cartbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.cart__icon {
+    display: flex;
+    align-items: center;
+}
+
+.cart__name {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.sellerbtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.sellericon {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+}
+
+.sellerbtn__name {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.dots__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.dots__icon button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 8px;
+    /* Add a z-index to the button to create a stacking context */
+    z-index: 1;
+}
+
+/* This targets the button and removes all potential browser focus/active styles */
+.dots__icon button:focus,
+.dots__icon button:active {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Create a pseudo-element to act as the border and background */
+.dots__icon button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Set z-index to a negative value to place it behind the button's content */
+    z-index: -1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Apply the hover styles ONLY to the pseudo-element */
+.dots__icon button:hover::after {
+    border-color: rgb(224, 224, 224);
+    background-color: rgb(250, 250, 250);
+}
+
+/* ---category section--- */
+
+.category__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.category__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 12px;
+    min-width: 90px;
+    padding: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+
+    box-sizing: content-box;
+}
+
+.category__icon img {
+    width: 64px;
+    height: 64px;
+}
+
+.category__icon {
+    display: flex;
+    /* margin-bottom: 12px; */
+
+    align-items: center;
+    justify-content: center;
+}
+
+.category__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", "Fallback-Inter", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* banner section */
+
+.banner__scrollbar {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+.scrollbtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.leftbtn button,
+.rightbtn button {
+    width: 40px;
+    height: 80px;
+    color: rgb(135, 135, 135);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.leftbtn button:hover,
+.rightbtn button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+
+.banner__img-container {
+    display: flex;
+    width: 800%;
+    /* 8 images → 8 × 100% */
+    height: 250px;
+    animation: scrollStep 20s ease-in-out infinite;
+}
+
+.banner__img1 {
+    width: 12.5%;
+    /* 100% / 8 images = 12.5% each */
+    flex-shrink: 0;
+}
+
+.banner__img1 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+@keyframes scrollStep {
+
+    /* 1st Image (Original) - Starts at 0% */
+    0%,
+    10% {
+        /* Hold 1st image */
+        transform: translateX(0);
+    }
+
+    /* Transition to 2nd Image (12.5% of 100%) */
+    12.5%,
+    22.5% {
+        /* Hold 2nd image */
+        transform: translateX(-12.5%);
+    }
+
+    /* 3rd Image */
+    25.0%,
+    35.0% {
+        transform: translateX(-25%);
+    }
+
+    /* 4th Image */
+    37.5%,
+    47.5% {
+        transform: translateX(-37.5%);
+    }
+
+    /* 5th Image */
+    50.0%,
+    60.0% {
+        transform: translateX(-50%);
+    }
+
+    /* 6th Image */
+    62.5%,
+    72.5% {
+        transform: translateX(-62.5%);
+    }
+
+    /* 7th Image */
+    75.0%,
+    85.0% {
+        transform: translateX(-75%);
+    }
+
+    /* 8th Image (Duplicate of 1st) - This is the "jump" point */
+    87.5%,
+    99.99% {
+        /* Hold the duplicate image up to almost 100% */
+        transform: translateX(-87.5%);
+    }
+
+    /* INSTANT JUMP BACK to the beginning (0%) to create the illusion of infinite loop */
+    100% {
+        transform: translateX(0);
+        /* Jump back to the start without animation */
+    }
+}
+
+/* Pause animation on hover */
+.banner__scrollbar:hover .banner__img-container {
+    animation-play-state: paused;
+}
+
+
+/* best deal on phones */
+
+
+.bestdealsection__grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+    /* margin-top: 10px; */
+    margin-top: 16px;
+
+}
+
+.bestdealsection {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: stretch;
+    border-width: 0px;
+    min-height: 0px;
+    height: 340px;
+    min-width: 0px;
+    /* gap: 10px; */
+    background-color: white;
+}
+
+.bestdeal__phones {
+    display: flex;
+}
+
+
+.bdphone__scroll {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 12px;
+
+}
+
+.bdphone__add {
+    position: relative;
+    top: -8px;
+    cursor: pointer;
+
+
+}
+
+.bdphone__add img {
+    width: 230px;
+    /* height: 354px; */
+}
+
+
+.bd__title {
+    padding: 16px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -.02px;
+    color: #1f1f1f;
+    font-family: "Inter", "Fallback Inter Semi Bold", Arial, sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    vertical-align: middle;
+}
+
+.bdphone__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 216px;
+    /* height: 244px; */
+    padding: 12px 24px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.phone__img {
+    display: flex;
+    width: 152px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.phone__img :hover {
+    transform: scale(1.05);
+}
+
+.phone__img img {
+    /* width: 152px; */
+    height: 152px;
+}
+
+
+.phone__name {
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -.01px;
+    font-family: "Inter Regular", "Fallback Inter Regular", Arial, sans-serif;
+    padding-top: 12px;
+}
+
+#Samsung {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 145px;
+    text-align: center;
+}
+
+.phone__price {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Inter", "Fallback Inter Semi Bold", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: -.01px;
+
+}
+
+/* poster */
+
+.poster {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    /* column-gap: 8px;  */
+    box-sizing: border-box;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    margin-bottom: 16px;
+}
+
+.posterimg {
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.posterimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+/* top deals */
+
+.topdeals {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    margin-bottom: 16px;
+}
+
+.topdeals__scroll {
+    display: flex;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 12px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.td__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0%;
+    width: 216px;
+    margin: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.td__title {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 16px;
+}
+
+.td__img {
+    display: flex;
+    width: 152px;
+    height: 152px;
+    align-items: center;
+    justify-content: center;
+}
+
+.td__img :hover {
+    transform: scale(1.05);
+}
+
+.td__img img {
+    width: 152px;
+    height: 152px;
+    object-fit: contain;
+    /* border-radius: 4px; */
+}
+
+.td__name {
+    display: block;
+    width: 145px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.td__price {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+/*  card section*/
+
+.category__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: stretch;
+    /* ensures all cards in a row are equal height */
+    grid-auto-rows: auto;
+    /* lets rows grow based on content */
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* .category__grid {
+  grid-auto-rows: minmax(300px, auto);
+} */
+
+
+
+
+.card__layout {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 16px;
+    height: 100%;
+}
+
+
+
+.card__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    /* margin-bottom: 12px; */
+    padding: 16px;
+}
+
+.card__name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card__nextarrow--btn button {
+    background-color: #2a55e5;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.card__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 10px; */
+    padding: 0px 12px 4px 12px;
+    height: 100%;
+}
+
+.card__item {
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+    text-align: center;
+    /* padding: 12px 12px 0px 12px; */
+    cursor: pointer;
+    padding: 12px;
+    margin: 0px 4px 8px 4px;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.carditem__name {
+    width: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    /* margin-top: 8px; */
+    padding-top: 16px;
+    text-align: left;
+}
+
+.carditem__offer {
+    font-size: 15px;
+    font-weight: 600;
+    color: #108934;
+    text-align: left;
+    /* padding-bottom: 12px; */
+    margin-right: 8px;
+    width: fit-content;
+}
+
+
+.carditem__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    /* increased height for bigger image area */
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 8px 8px 0px 8px;
+}
+
+.carditem__img img {
+    width: 100%;
+    /* height: 650px; */
+    height: 152px;
+    object-fit: contain;
+    /* keeps correct image ratio */
+    transition: transform 0.3s ease, ;
+}
+
+
+.carditem__img:hover img {
+    transform: scale(1.05);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+    cursor: pointer;
+}
+
+
+.ad__card {
+    background-color: #fff;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ad__card img {
+    width: 100%;
+    height: 649px;
+    object-fit: cover;
+    display: block;
+    /* border-radius: 8px; */
+}
+
+/* furniture topdeals */
+
+.furniture__td {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+/* top deals on appliances */
+
+.topdeals2 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    margin-bottom: 16px;
+}
+
+.td__listbar {
+    display: flex;
+    width: 244px;
+    /* padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 12px; */
+}
+
+.div__listmain {
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 12px;
+}
+
+/* category and add */
+.category__grid2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.ad__card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    top: 64px;
+    background-color: #212121;
+}
+
+.footer__section1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+    padding: 40px 60px 0px 60px;
+
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    color: rgb(135, 135, 135);
+    font-size: 12px;
+    margin-bottom: 12px;
+    font-family: "Inter", "fallback-inter_regular", Arial, sans-serif;
+}
+
+.list {
+    font-family: "Inter", "fallback-Inter", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    line-height: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.list:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+.head__para {
+    margin-bottom: 16px;
+}
+
+.p {
+    color: #fff;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.logoicon {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo__img {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+#line {
+    border-left: 1px solid #454d5e;
+    padding-left: 32px;
+}
+
+.footer__section2 {
+    padding: 25px 0px 25px 0px;
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.section2__list {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.section2__icon img {
+    width: 13px;
+    height: 12px;
+}
+
+.section2__name {
+    font-family: "Inter", Arial, sans-serif;
+    color: #fff;
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+}
