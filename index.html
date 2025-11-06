@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flipkart clone</title>
+    <title>flipkart responsive</title>
     <link rel="icon" href="img/logo-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
     <script src="https://kit.fontawesome.com/cb6000844d.js" crossorigin="anonymous"></script>
 </head>
@@ -21,17 +21,25 @@
     <header>
         <div class="navbar">
             <div class="nav__left">
+                <div class="menubar">
+                    <img src="img/menubar.svg" alt="menubar">
+                </div>
                 <div class="logo">
                     <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
                         width="160px" height="40px" alt="flipkart_log">
                 </div>
                 <div class="searchbar">
                     <i class="fa-solid fa-magnifying-glass" style="color: #717478; width: 24px; height: 24px;"></i>
-                    <input type="text" placeholder="Search for Products, Brands and More">
+                    <input type="text" class="searchtext" placeholder="Search for Products, Brands and More">
                 </div>
             </div>
 
             <div class="nav__right">
+
+                <div class="download__mobile">
+                    <img src="img/download mobile.svg" width="24px" height="24px" alt="mobileicon">
+                </div>
+
                 <div class="loginbtn">
                     <div class="login__profileicon"><img src="img/profile.svg" alt="profileicon"></div>
                     <div class="loginbtn__name"><button>Login</button></div>
@@ -146,50 +154,106 @@
 
                         <div class="bdphone__list">
                             <div class="phone__img"><img src="img/phone1.webp" alt="phone1"></div>
-                            <div class="phone__name">OPPO K13x 5G</div>
-                            <div class="phone__price">From ₹9,499*</div>
+                            <div class="np">
+                                <div class="phone__name">OPPO K13x 5G</div>
+                                <div class="phone__price">From ₹9,499*</div>
+                            </div>
+                            <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                    style="margin-right: 8px;">
+                                    <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
                         </div>
 
                         <div class="bdphone__list">
                             <div class="phone__img"><img src="img/phone2.webp" alt="phone2"></div>
-                            <div class="phone__name">Moto Edge 60 Pro 5G</div>
-                            <div class="phone__price">From ₹24,999*</div>
+                            <div class="np">
+                                <div class="phone__name">Moto Edge 60 Pro 5G</div>
+                                <div class="phone__price">From ₹24,999*</div>
+                            </div>
+                            <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                    style="margin-right: 8px;">
+                                    <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
                         </div>
 
                         <div class="bdphone__list">
                             <div class="phone__img"><img src="img/phone3.webp" alt="phone3"></div>
-                            <div class="phone__name">Realme P4 5G</div>
-                            <div class="phone__price">From ₹14,999*</div>
+                            <div class="np">
+                                <div class="phone__name">Realme P4 5G</div>
+                                <div class="phone__price">From ₹14,999*</div>
+                            </div>
+                            <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                    style="margin-right: 8px;">
+                                    <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
                         </div>
 
                         <div class="bdphone__list">
                             <div class="phone__img"><img src="img/phone4.webp" alt="phone4"></div>
-                            <div class="phone__name">OPPO K13 5G</div>
-                            <div class="phone__price">From ₹14,999*</div>
+                            <div class="np">
+                                <div class="phone__name">OPPO K13 5G</div>
+                                <div class="phone__price">From ₹14,999*</div>
+                            </div>
+                            <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                    style="margin-right: 8px;">
+                                    <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
                         </div>
 
                         <div class="bdphone__list">
                             <div class="phone__img"><img src="img/phone5.webp" alt="phone5"></div>
-                            <div class="phone__name">Moto G96 5G</div>
-                            <div class="phone__price">Just ₹14,999*</div>
+                            <div class="np">
+                                <div class="phone__name">Moto G96 5G</div>
+                                <div class="phone__price">Just ₹14,999*</div>
+                            </div>
+                            <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                    style="margin-right: 8px;">
+                                    <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
                         </div>
 
                         <div class="bdphone__list">
                             <div class="phone__img"><img src="img/phone6.webp" alt="phone6"></div>
-                            <div class="phone__name">Realme P3x 5G</div>
-                            <div class="phone__price">From ₹10,999*</div>
+                            <div class="np">
+                                <div class="phone__name">Realme P3x 5G</div>
+                                <div class="phone__price">From ₹10,999*</div>
+                            </div>
+                            <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                    style="margin-right: 8px;">
+                                    <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
                         </div>
 
                         <div class="bdphone__list">
                             <div class="phone__img"><img src="img/phone7.webp" alt="phone7"></div>
-                            <div class="phone__name" id="Samsung">Samsung Galaxy A35 5G</div>
-                            <div class="phone__price">From ₹17,999*</div>
+                            <div class="np">
+                                <div class="phone__name" id="Samsung">Samsung Galaxy A35 5G</div>
+                                <div class="phone__price">From ₹17,999*</div>
+                            </div>
+                            <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                    style="margin-right: 8px;">
+                                    <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
                         </div>
 
                         <div class="bdphone__list">
                             <div class="phone__img"><img src="img/phone8.webp" alt="phone8"></div>
-                            <div class="phone__name">realme P4 Pro 5G</div>
-                            <div class="phone__price">From ₹21,499*</div>
+                            <div class="np">
+                                <div class="phone__name">realme P4 Pro 5G</div>
+                                <div class="phone__price">From ₹21,499*</div>
+                            </div>
+                            <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                    style="margin-right: 8px;">
+                                    <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
                         </div>
                     </div>
 
@@ -200,7 +264,6 @@
                 <img src="img/bdphones-ad.webp" alt="ad">
             </div>
         </div>
-
         <!-- poster images -->
 
         <div class="poster">
@@ -219,60 +282,123 @@
             <div class="topdeals__scroll">
                 <div class="td__list">
                     <div class="td__img"><img src="img/topdeals1.webp" alt="topdeals"></div>
-                    <div class="td__name">Premium TVs</div>
-                    <div class="td__price">From ₹15,499*</div>
+                    <div class="np">
+                        <div class="td__name">Premium TVs</div>
+                        <div class="td__price">From ₹15,499*</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/topdeals2.webp" alt="topdeals"></div>
-                    <div class="td__name">Best-selling Refrigerators</div>
-                    <div class="td__price">From ₹9,990</div>
+                    <div class="np">
+                        <div class="td__name">Best-selling Refrigerators</div>
+                        <div class="td__price">From ₹9,990</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/topdeals3.webp" alt="topdeals"></div>
-                    <div class="td__name">Trending deals</div>
-                    <div class="td__price">Shop now!</div>
+                    <div class="np">
+                        <div class="td__name">Trending deals</div>
+                        <div class="td__price">Shop now!</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/topdeals4.webp" alt="topdeals"></div>
-                    <div class="td__name">Kitchen Essentials</div>
-                    <div class="td__price">From ₹1249</div>
+                    <div class="np">
+                        <div class="td__name">Kitchen Essentials</div>
+                        <div class="td__price">From ₹1249</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
                 <div class="td__list">
                     <div class="td__img"><img src="img/topdeals5.webp" alt="topdeals"></div>
-                    <div class="td__name">Home Essentials</div>
-                    <div class="td__price">Shop Now!</div>
+                    <div class="np">
+                        <div class="td__name">Home Essentials</div>
+                        <div class="td__price">Shop Now!</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/topdeals6.avif" alt="topdeals"></div>
-                    <div class="td__name">Fans & Geysers</div>
-                    <div class="td__price">From ₹799</div>
+                    <div class="np">
+                        <div class="td__name">Fans & Geysers</div>
+                        <div class="td__price">From ₹799</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/topdeals7.jpeg" alt="topdeals"></div>
-                    <div class="td__name">Microwave Ovens</div>
-                    <div class="td__price">From ₹4,990</div>
+                    <div class="np">
+                        <div class="td__name">Microwave Ovens</div>
+                        <div class="td__price">From ₹4,990</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/topdeals8.webp" height="152px" alt="topdeals"></div>
-                    <div class="td__name">Lowest Price Ever</div>
-                    <div class="td__price">From ₹19,990*</div>
+                    <div class="np">
+                        <div class="td__name">Lowest Price Ever</div>
+                        <div class="td__price">From ₹19,990*</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
             </div>
         </div>
 
+
         <!-- photograpghy card section  -->
-         
+
         <div class="category__grid">
             <div class="card__layout">
                 <div class="card__head">
                     <div class="card__name">Photography Gear</div>
-                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                    <div class="card__nextarrow--btn">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17">
+                            <path d="M6.627 3.749L11.627 8.749L6.627 13.749" stroke="#FFFFFF" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
                 </div>
 
                 <div class="card__grid">
@@ -307,7 +433,13 @@
             <div class="card__layout">
                 <div class="card__head">
                     <div class="card__name">Mobiles To Check Out</div>
-                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                    <div class="card__nextarrow--btn">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17">
+                            <path d="M6.627 3.749L11.627 8.749L6.627 13.749" stroke="#FFFFFF" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
                 </div>
 
                 <div class="card__grid">
@@ -347,7 +479,13 @@
             <div class="card__layout">
                 <div class="card__head">
                     <div class="card__name">Travel Essentials For You</div>
-                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                    <div class="card__nextarrow--btn">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17">
+                            <path d="M6.627 3.749L11.627 8.749L6.627 13.749" stroke="#FFFFFF" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
                 </div>
 
                 <div class="card__grid">
@@ -383,7 +521,12 @@
             <div class="card__layout">
                 <div class="card__head">
                     <div class="card__name">Best Deals on Designer Furniture</div>
-                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                    <div class="card__nextarrow--btn">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17">
+                            <path d="M6.627 3.749L11.627 8.749L6.627 13.749" stroke="#FFFFFF" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
 
                 <div class="card__grid">
@@ -418,7 +561,13 @@
             <div class="card__layout">
                 <div class="card__head">
                     <div class="card__name">Fashion's Top Deals</div>
-                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                    <div class="card__nextarrow--btn">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17">
+                            <path d="M6.627 3.749L11.627 8.749L6.627 13.749" stroke="#FFFFFF" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
                 </div>
 
                 <div class="card__grid">
@@ -453,7 +602,12 @@
             <div class="card__layout">
                 <div class="card__head">
                     <div class="card__name">Shop Your Favorites</div>
-                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                    <div class="card__nextarrow--btn">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17">
+                            <path d="M6.627 3.749L11.627 8.749L6.627 13.749" stroke="#FFFFFF" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
 
                 <div class="card__grid">
@@ -488,7 +642,12 @@
             <div class="card__layout">
                 <div class="card__head">
                     <div class="card__name">Home Decor & Furnishing</div>
-                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                    <div class="card__nextarrow--btn">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17">
+                            <path d="M6.627 3.749L11.627 8.749L6.627 13.749" stroke="#FFFFFF" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
 
                 <div class="card__grid">
@@ -532,49 +691,105 @@
             <div class="topdeals__scroll">
                 <div class="td__list">
                     <div class="td__img"><img src="img/furniture1.png" alt="topdeals"></div>
-                    <div class="td__name">Mattresses</div>
-                    <div class="td__price">From ₹2,990</div>
+                    <div class="np">
+                        <div class="td__name">Mattresses</div>
+                        <div class="td__price">From ₹2,990</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/furniture2.png" alt="topdeals"></div>
-                    <div class="td__name">Sofa & Sectional</div>
-                    <div class="td__price">From ₹7,999</div>
+                    <div class="np">
+                        <div class="td__name">Sofa & Sectional</div>
+                        <div class="td__price">From ₹7,999</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/furniture3.png" alt="topdeals"></div>
-                    <div class="td__name">Office Study Chairs</div>
-                    <div class="td__price">From ₹1,890</div>
+                    <div class="np">
+                        <div class="td__name">Office Study Chairs</div>
+                        <div class="td__price">From ₹1,890</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/furniture4.png" alt="topdeals"></div>
-                    <div class="td__name">Beds</div>
-                    <div class="td__price">From ₹1790</div>
+                    <div class="np">
+                        <div class="td__name">Beds</div>
+                        <div class="td__price">From ₹1790</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
                 <div class="td__list">
                     <div class="td__img"><img src="img/furniture5.jpeg" alt="topdeals"></div>
-                    <div class="td__name">TV Units</div>
-                    <div class="td__price">From ₹1290</div>
+                    <div class="np">
+                        <div class="td__name">TV Units</div>
+                        <div class="td__price">From ₹1290</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/furniture6.jpeg" alt="topdeals"></div>
-                    <div class="td__name">Sofa Beds</div>
-                    <div class="td__price">From ₹6,099</div>
+                    <div class="np">
+                        <div class="td__name">Sofa Beds</div>
+                        <div class="td__price">From ₹6,099</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/furniture7.jpeg" alt="topdeals"></div>
-                    <div class="td__name">Sofa Set</div>
-                    <div class="td__price">From ₹21,999</div>
+                    <div class="np">
+                        <div class="td__name">Sofa Set</div>
+                        <div class="td__price">From ₹21,999</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
 
                 <div class="td__list">
                     <div class="td__img"><img src="img/furniture8.jpeg" height="152px" alt="topdeals"></div>
-                    <div class="td__name">Sofa Beds</div>
-                    <div class="td__price">From ₹6,099*</div>
+                    <div class="np">
+                        <div class="td__name">Sofa Beds</div>
+                        <div class="td__price">From ₹6,099*</div>
+                    </div>
+                    <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                            style="margin-right: 8px;">
+                            <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg></div>
                 </div>
             </div>
         </div>
@@ -582,13 +797,18 @@
         <!-- category and add  -->
 
         <div class="category__grid2">
-            <div class="card__layout">
+            <div class="card__layout2">
                 <div class="card__head">
                     <div class="card__name">Hair & Skincare Essentials</div>
-                    <div class="card__nextarrow--btn"><button>&gt;</button></div>
+                    <div class="card__nextarrow--btn">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 17 17">
+                            <path d="M6.627 3.749L11.627 8.749L6.627 13.749" stroke="#FFFFFF" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
 
-                <div class="card__grid">
+                <div class="card__grid2">
                     <div class="card__item">
                         <div class="carditem__img"><img src="img/skincare1.jpeg" alt="decor"></div>
                         <div class="carditem__name">Moisturizer</div>
@@ -631,37 +851,79 @@
                 <div class="td__listbar">
                     <div class="td__list">
                         <div class="td__img"><img src="img/appliance1.png" alt="topdeals"></div>
-                        <div class="td__name">Kitchen Essentials</div>
-                        <div class="td__price">From ₹1249</div>
+                        <div class="np">
+                            <div class="td__name">Kitchen Essentials</div>
+                            <div class="td__price">From ₹1249</div>
+                        </div>
+                        <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                style="margin-right: 8px;">
+                                <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
                     </div>
 
                     <div class="td__list">
                         <div class="td__img"><img src="img/appliance2.jpeg" alt="topdeals"></div>
-                        <div class="td__name">Home Essentials</div>
-                        <div class="td__price">Shop Now!</div>
+                        <div class="np">
+                            <div class="td__name">Home Essentials</div>
+                            <div class="td__price">Shop Now!</div>
+                        </div>
+                        <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                style="margin-right: 8px;">
+                                <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
                     </div>
 
                     <div class="td__list">
                         <div class="td__img"><img src="img/appliance3.png" alt="topdeals"></div>
-                        <div class="td__name">Fans & Geysers</div>
-                        <div class="td__price">From ₹799</div>
+                        <div class="np">
+                            <div class="td__name">Fans & Geysers</div>
+                            <div class="td__price">From ₹799</div>
+                        </div>
+                        <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                style="margin-right: 8px;">
+                                <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
                     </div>
 
                     <div class="td__list">
                         <div class="td__img"><img src="img/appliance4.png" alt="topdeals"></div>
-                        <div class="td__name">Bata, Khadim's ...</div>
-                        <div class="td__price">Under ₹499</div>
+                        <div class="np">
+                            <div class="td__name">Bata, Khadim's ...</div>
+                            <div class="td__price">Under ₹499</div>
+                        </div>
+                        <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                style="margin-right: 8px;">
+                                <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
                     </div>
                     <div class="td__list">
                         <div class="td__img"><img src="img/appliance5.jpeg" alt="topdeals"></div>
-                        <div class="td__name">Puma, Adidas ...</div>
-                        <div class="td__price">Min. 40% Off</div>
+                        <div class="np">
+                            <div class="td__name">Puma, Adidas ...</div>
+                            <div class="td__price">Min. 40% Off</div>
+                        </div>
+                        <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                style="margin-right: 8px;">
+                                <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
                     </div>
 
                     <div class="td__list">
                         <div class="td__img"><img src="img/appliance6.jpeg" alt="topdeals"></div>
-                        <div class="td__name">Allen Solly & Van Heusen</div>
-                        <div class="td__price">Min. 40% Off</div>
+                        <div class="np">
+                            <div class="td__name">Allen Solly & Van Heusen</div>
+                            <div class="td__price">Min. 40% Off</div>
+                        </div>
+                        <div class="arrow__icon"><svg width="16" height="16" fill="none" viewBox="0 0 17 17"
+                                style="margin-right: 8px;">
+                                <path d="m6.627 3.749 5 5-5 5" stroke="#111112" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
                     </div>
 
                 </div>
@@ -672,111 +934,114 @@
     <!-- footer -->
 
     <footer>
-        <div class="footer__section1">
-            <div class="section1">
-                <div class="head">ABOUT</div>
-                <div class="list">Contact Us</div>
-                <div class="list">Careers</div>
-                <div class="list">Flipkart Stories</div>
-                <div class="list">Press</div>
-                <div class="list">Corporate Information</div>
-            </div>
-
-            <div class="section1">
-                <div class="head">GROUP COMPANIES</div>
-                <div class="list">Myntra</div>
-                <div class="list">Cleartrip</div>
-                <div class="list">Shopsy</div>
-            </div>
-
-            <div class="section1">
-                <div class="head">HELP</div>
-                <div class="list">Payments</div>
-                <div class="list">Cancellation & Returns</div>
-                <div class="list">FAQ</div>
-            </div>
-
-
-            <div class="section1">
-                <div class="head">CONSUMER POLICY</div>
-                <div class="list">Cancellation & Returns</div>
-                <div class="list">Terms Of Use</div>
-                <div class="list">Security</div>
-                <div class="list">Privacy</div>
-                <div class="list">Sitemap</div>
-                <div class="list">Grievance Redressal</div>
-                <div class="list">EPR Compliance</div>
-
-            </div>
-
-            <div class="section1" id="line">
-                <div class="head">Mail Us:</div>
-                <div class="head__para">
-                    <p class="p">Flipkart Internet Private Limited, </p>
-                    <p class="p"> Buildings Alyssa, Begonia &amp; </p>
-                    <p class="p"> Clove Embassy Tech Village, </p>
-                    <p class="p"> Outer Ring Road, Devarabeesanahalli Village, </p>
-                    <p class="p"> Bengaluru, 560103, </p>
-                    <p class="p"> Karnataka, India</p>
+        <div class="footer">
+            <div class="footer__section1">
+                <div class="section1">
+                    <div class="head">ABOUT</div>
+                    <div class="list">Contact Us</div>
+                    <div class="list">Careers</div>
+                    <div class="list">Flipkart Stories</div>
+                    <div class="list">Press</div>
+                    <div class="list">Corporate Information</div>
                 </div>
 
-                <div>
-                    <div class="head"> Social:</div>
-                    <div class="logoicon">
-                        <div class="logo__img"><img src="img/footerlogo1.svg" alt="icon"></div>
-                        <div class="logo__img"><img src="img/footerlogo2.svg" alt="icon"></div>
-                        <div class="logo__img"><img src="img/footerlogo3.svg" alt="icon"></div>
-                        <div class="logo__img"><img src="img/footerlogo4.svg" alt="icon" width="20px" height="20px">
+                <div class="section1">
+                    <div class="head">GROUP COMPANIES</div>
+                    <div class="list">Myntra</div>
+                    <div class="list">Cleartrip</div>
+                    <div class="list">Shopsy</div>
+                </div>
+
+                <div class="section1">
+                    <div class="head">HELP</div>
+                    <div class="list">Payments</div>
+                    <div class="list">Cancellation & Returns</div>
+                    <div class="list">FAQ</div>
+                </div>
+
+
+                <div class="section1">
+                    <div class="head">CONSUMER POLICY</div>
+                    <div class="list">Cancellation & Returns</div>
+                    <div class="list">Terms Of Use</div>
+                    <div class="list">Security</div>
+                    <div class="list">Privacy</div>
+                    <div class="list">Sitemap</div>
+                    <div class="list">Grievance Redressal</div>
+                    <div class="list">EPR Compliance</div>
+
+                </div>
+
+                <div class="section1" id="line">
+                    <div class="head">Mail Us:</div>
+                    <div class="head__para">
+                        <p class="p">Flipkart Internet Private Limited, </p>
+                        <p class="p"> Buildings Alyssa, Begonia &amp; </p>
+                        <p class="p"> Clove Embassy Tech Village, </p>
+                        <p class="p"> Outer Ring Road, Devarabeesanahalli Village, </p>
+                        <p class="p"> Bengaluru, 560103, </p>
+                        <p class="p"> Karnataka, India</p>
+                    </div>
+
+                    <div>
+                        <div class="head"> Social:</div>
+                        <div class="logoicon">
+                            <div class="logo__img"><img src="img/footerlogo1.svg" alt="icon"></div>
+                            <div class="logo__img"><img src="img/footerlogo2.svg" alt="icon"></div>
+                            <div class="logo__img"><img src="img/footerlogo3.svg" alt="icon"></div>
+                            <div class="logo__img"><img src="img/footerlogo4.svg" alt="icon" width="20px" height="20px">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section1">
-                <div class="head">Registered Office Address:</div>
-                <div class="head__para">
-                    <p class="p"> Buildings Alyssa, Begonia &amp; </p>
-                    <p class="p">Flipkart Internet Private Limited, </p>
-                    <p class="p"> Clove Embassy Tech Village, </p>
-                    <p class="p"> Outer Ring Road, Devarabeesanahalli Village,</p>
-                    <p class="p"> Bengaluru, 560103, </p>
-                    <p class="p"> Karnataka, India </p>
-                    <p class="p"> CIN : U51109KA2012PTC066107 </p>
-                    <p class="p">Telephone: <span style="color: rgb(40, 120, 247); cursor: pointer;">044-45614700
-                        </span>
-                        / <span style="color: rgb(40, 120, 247); cursor: pointer;">044-67415800</span></p>
+                <div class="section1">
+                    <div class="head">Registered Office Address:</div>
+                    <div class="head__para">
+                        <p class="p"> Buildings Alyssa, Begonia &amp; </p>
+                        <p class="p">Flipkart Internet Private Limited, </p>
+                        <p class="p"> Clove Embassy Tech Village, </p>
+                        <p class="p"> Outer Ring Road, Devarabeesanahalli Village,</p>
+                        <p class="p"> Bengaluru, 560103, </p>
+                        <p class="p"> Karnataka, India </p>
+                        <p class="p"> CIN : U51109KA2012PTC066107 </p>
+                        <p class="p">Telephone: <span style="color: rgb(40, 120, 247); cursor: pointer;">044-45614700
+                            </span>
+                            / <span style="color: rgb(40, 120, 247); cursor: pointer;">044-67415800</span></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="footer__section2">
+            <div class="footer__section2">
 
-            <div class="section2__list">
-                <div class="section2__icon"> <img src="/img/foootericon1.svg" width="13px" height="13px"
-                        alt="seller icon"></div>
-                <div class="section2__name">Become a Seller</div>
-            </div>
+                <div class="section2__list">
+                    <div class="section2__icon"> <img src="/img/foootericon1.svg" width="13px" height="13px"
+                            alt="seller icon"></div>
+                    <div class="section2__name">Become a Seller</div>
+                </div>
 
-            <div class="section2__list">
-                <div class="section2__icon"> <img src="/img/foootericon2.svg" alt="seller icon"></div>
-                <div class="section2__name">Become a Seller</div>
-            </div>
+                <div class="section2__list">
+                    <div class="section2__icon"> <img src="/img/foootericon2.svg" alt="seller icon"></div>
+                    <div class="section2__name">Become a Seller</div>
+                </div>
 
-            <div class="section2__list">
-                <div class="section2__icon"> <img src="/img/foootericon3.svg" alt="seller icon"></div>
-                <div class="section2__name">Advertise</div>
-            </div>
+                <div class="section2__list">
+                    <div class="section2__icon"> <img src="/img/foootericon3.svg" alt="seller icon"></div>
+                    <div class="section2__name">Advertise</div>
+                </div>
 
-            <div class="section2__list">
-                <div class="section2__icon"> <img src="/img/foootericon4.svg" alt="seller icon"></div>
-                <div class="section2__name">Gift Cards</div>
-            </div>
+                <div class="section2__list">
+                    <div class="section2__icon"> <img src="/img/foootericon4.svg" alt="seller icon"></div>
+                    <div class="section2__name">Gift Cards</div>
+                </div>
 
-            <div class="section2__list">
-                <div class="section2__name" style="cursor:default;">© 2007-2025 <span>Flipkart.com</span></div>
-            </div>
+                <div class="section2__list">
+                    <div class="section2__name" style="cursor:default;">© 2007-2025 <span>Flipkart.com</span></div>
+                </div>
 
-            <div class="section2__list">
-                <div class="section2__payment--img"><img src="img/payment-method-logo.svg" alt="payment-method-logo">
+                <div class="section2__list">
+                    <div class="section2__payment--img"><img src="img/payment-method-logo.svg"
+                            alt="payment-method-logo">
+                    </div>
                 </div>
             </div>
         </div>
